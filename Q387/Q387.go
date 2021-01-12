@@ -49,14 +49,4 @@ func firstUniqChar(s string) int {
 	}
 	return min
 
-	//for i := len(bs) - 1; i >= 0; i-- { //必须从后往前数
-	//	ch := int(bs[i]) - 61      //获取当前字母编号
-	//	if haveSeen[ch] == false { //如果之前没见过这个字符
-	//		seenCount++         //统计+1
-	//		haveSeen[ch] = true //标记这个字母已经见过了
-	//		if seenCount == 26 {
-	//			return i
-	//		} //如果26个字母都见过了，而且这是最后一个字母，则直接
-	//	}
-	//}
 }
