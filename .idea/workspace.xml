@@ -11,13 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95dd1484-644a-4bd7-8250-6258ed85a909" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Q239/Q239.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Q628/Q628.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Q88/Q88.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/LeetCodeTypes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q88/Q88.go" beforeDir="false" afterPath="$PROJECT_DIR$/Q88/Q88.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,13 +54,22 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
-  <component name="RunManager" selected="Go 构建.go build 20.leecode/Q628">
+  <component name="RunManager" selected="Go 构建.go build 20.leecode/Q88">
     <configuration name="go build 20.leecode/Q628" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="20.leetcode" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/Q628/Q628.go" />
       <package value="20.leecode/Q628" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build 20.leecode/Q88" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="20.leetcode" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/Q88/Q88.go" />
+      <package value="20.leecode/Q88" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -79,6 +83,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build 20.leecode/Q88" />
         <item itemvalue="Go 构建.go build 20.leecode/Q628" />
         <item itemvalue="Go 构建.go build Q239.go" />
       </list>
@@ -114,54 +119,62 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
+    <state width="446" height="466" key="DebuggerActiveHint" timestamp="1611309612466">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="446" height="466" key="DebuggerActiveHint/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611309612466" />
     <state x="805" y="297" key="FileChooserDialogImpl" timestamp="1611223976696">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="805" y="297" key="FileChooserDialogImpl/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611223976696" />
-    <state width="2005" height="376" key="GridCell.Tab.0.bottom" timestamp="1611213617512">
+    <state width="2005" height="376" key="GridCell.Tab.0.bottom" timestamp="1611313869803">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="376" key="GridCell.Tab.0.bottom/2560.203.1536.824/0.0.2048.1112/-1440.0.823.1423@0.0.2048.1112" timestamp="1610877794438" />
-    <state width="2005" height="376" key="GridCell.Tab.0.bottom/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611213617512" />
-    <state width="2005" height="376" key="GridCell.Tab.0.center" timestamp="1611213617510">
+    <state width="2005" height="376" key="GridCell.Tab.0.bottom/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611313869803" />
+    <state width="2005" height="376" key="GridCell.Tab.0.center" timestamp="1611313869803">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="376" key="GridCell.Tab.0.center/2560.203.1536.824/0.0.2048.1112/-1440.0.823.1423@0.0.2048.1112" timestamp="1610877794438" />
-    <state width="2005" height="376" key="GridCell.Tab.0.center/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611213617510" />
-    <state width="2005" height="376" key="GridCell.Tab.0.left" timestamp="1611213617510">
+    <state width="2005" height="376" key="GridCell.Tab.0.center/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611313869803" />
+    <state width="2005" height="376" key="GridCell.Tab.0.left" timestamp="1611313869803">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="376" key="GridCell.Tab.0.left/2560.203.1536.824/0.0.2048.1112/-1440.0.823.1423@0.0.2048.1112" timestamp="1610877794438" />
-    <state width="2005" height="376" key="GridCell.Tab.0.left/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611213617510" />
-    <state width="2005" height="376" key="GridCell.Tab.0.right" timestamp="1611213617511">
+    <state width="2005" height="376" key="GridCell.Tab.0.left/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611313869803" />
+    <state width="2005" height="376" key="GridCell.Tab.0.right" timestamp="1611313869803">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="376" key="GridCell.Tab.0.right/2560.203.1536.824/0.0.2048.1112/-1440.0.823.1423@0.0.2048.1112" timestamp="1610877794438" />
-    <state width="2005" height="376" key="GridCell.Tab.0.right/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611213617511" />
-    <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1611213617512">
+    <state width="2005" height="376" key="GridCell.Tab.0.right/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611313869803" />
+    <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1611313870116">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="376" key="GridCell.Tab.1.bottom/2560.203.1536.824/0.0.2048.1112/-1440.0.823.1423@0.0.2048.1112" timestamp="1610877794438" />
-    <state width="2005" height="376" key="GridCell.Tab.1.bottom/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611213617512" />
-    <state width="2005" height="376" key="GridCell.Tab.1.center" timestamp="1611213617512">
+    <state width="2005" height="376" key="GridCell.Tab.1.bottom/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611313870116" />
+    <state width="2005" height="376" key="GridCell.Tab.1.center" timestamp="1611313870116">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="376" key="GridCell.Tab.1.center/2560.203.1536.824/0.0.2048.1112/-1440.0.823.1423@0.0.2048.1112" timestamp="1610877794438" />
-    <state width="2005" height="376" key="GridCell.Tab.1.center/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611213617512" />
-    <state width="2005" height="376" key="GridCell.Tab.1.left" timestamp="1611213617512">
+    <state width="2005" height="376" key="GridCell.Tab.1.center/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611313870116" />
+    <state width="2005" height="376" key="GridCell.Tab.1.left" timestamp="1611313870116">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="376" key="GridCell.Tab.1.left/2560.203.1536.824/0.0.2048.1112/-1440.0.823.1423@0.0.2048.1112" timestamp="1610877794438" />
-    <state width="2005" height="376" key="GridCell.Tab.1.left/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611213617512" />
-    <state width="2005" height="376" key="GridCell.Tab.1.right" timestamp="1611213617512">
+    <state width="2005" height="376" key="GridCell.Tab.1.left/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611313870116" />
+    <state width="2005" height="376" key="GridCell.Tab.1.right" timestamp="1611313870116">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="376" key="GridCell.Tab.1.right/2560.203.1536.824/0.0.2048.1112/-1440.0.823.1423@0.0.2048.1112" timestamp="1610877794438" />
-    <state width="2005" height="376" key="GridCell.Tab.1.right/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611213617512" />
+    <state width="2005" height="376" key="GridCell.Tab.1.right/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611313870116" />
     <state x="526" y="200" key="SettingsEditor" timestamp="1611223981517">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="526" y="200" key="SettingsEditor/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611223981517" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1611232863950">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/2560.203.1536.824/0.0.2048.1112/-2560.0.1463.783@0.0.2048.1112" timestamp="1611232863950" />
     <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1611113103838">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -185,6 +198,11 @@
           <url>file://$PROJECT_DIR$/Q628/Q628.go</url>
           <line>73</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Q88/Q88.go</url>
+          <line>50</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
