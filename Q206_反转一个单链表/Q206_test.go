@@ -3,35 +3,35 @@
  * @Date  2020-11-12 14:53
  * @Description //TODO
  **/
-package Q206
+package Q206_反转一个单链表
 
 import (
-	"20.leecode/leetcode"
+	"20.leecode/leetcodeType"
 	"reflect"
 	"testing"
 )
 
 func Test_reverseList(t *testing.T) {
 	type args struct {
-		head *leetcode.ListNode
+		head *leetcodeType.ListNode
 	}
 	tests := []struct {
 		name string
 		args args
-		want *leetcode.ListNode
+		want *leetcodeType.ListNode
 	}{
 		// TODO: Add test cases.
 		{
 			name: "示例",
-			args: args{&leetcode.ListNode{
-				Val:  1,
-				Next: &leetcode.ListNode{
-					Val:  2,
-					Next: &leetcode.ListNode{
-						Val:  3,
-						Next: &leetcode.ListNode{
-							Val:  4,
-							Next: &leetcode.ListNode{
+			args: args{&leetcodeType.ListNode{
+				Val: 1,
+				Next: &leetcodeType.ListNode{
+					Val: 2,
+					Next: &leetcodeType.ListNode{
+						Val: 3,
+						Next: &leetcodeType.ListNode{
+							Val: 4,
+							Next: &leetcodeType.ListNode{
 								Val:  5,
 								Next: nil,
 							},
@@ -39,15 +39,15 @@ func Test_reverseList(t *testing.T) {
 					},
 				},
 			}},
-			want: &leetcode.ListNode{
-				Val:  5,
-				Next: &leetcode.ListNode{
-					Val:  4,
-					Next: &leetcode.ListNode{
-						Val:  3,
-						Next: &leetcode.ListNode{
-							Val:  2,
-							Next: &leetcode.ListNode{
+			want: &leetcodeType.ListNode{
+				Val: 5,
+				Next: &leetcodeType.ListNode{
+					Val: 4,
+					Next: &leetcodeType.ListNode{
+						Val: 3,
+						Next: &leetcodeType.ListNode{
+							Val: 2,
+							Next: &leetcodeType.ListNode{
 								Val:  1,
 								Next: nil,
 							},
