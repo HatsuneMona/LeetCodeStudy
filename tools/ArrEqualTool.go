@@ -6,14 +6,15 @@
 package tools
 
 import (
+	. "20.leecode/leetcodeType"
 	"fmt"
 )
 
-func IsArrEqual(arrA []int, arrB []int) {
+func IsArrEqual(arrA []int, arrB []int) bool {
 	if len(arrA) != len(arrB) {
 		fmt.Println("两个数组长度不同。")
 		fmt.Printf("A的长度为%v，B的长度为%v。\n", len(arrA), len(arrB))
-		return
+		return false
 	}
 	notEqualList := make([]int, len(arrA))
 	stat := 0
@@ -25,11 +26,16 @@ func IsArrEqual(arrA []int, arrB []int) {
 	}
 	if stat == 0 {
 		fmt.Println("验证成功！")
-		return
+		return true
 	} else {
 		fmt.Printf("两个数组共有%v处不同，差异如下：\n", stat)
 		for _, value := range notEqualList[:stat] {
 			fmt.Printf("差异位置：%v，值：[A[i], B[i]] == [%v, %v] \n", value, arrA[value], arrB[value])
 		}
+		return false
 	}
+}
+
+func IsListEqual(listA *ListNode, listB *ListNode) bool {
+	return IsArrEqual(ListToArr(listA), ListToArr(listB))
 }

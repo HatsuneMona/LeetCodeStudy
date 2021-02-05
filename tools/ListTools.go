@@ -6,7 +6,7 @@
 package tools
 
 import (
-	. "20.leecode/leetcode"
+	. "20.leecode/leetcodeType"
 )
 
 /**
@@ -16,7 +16,7 @@ import (
  * @参数      []int
  * @返回值     *ListNode
 **/
-func CreateList(src []int) *ListNode {
+func ArrToList(src []int) *ListNode {
 	if len(src) == 0 {
 		return nil
 	}
