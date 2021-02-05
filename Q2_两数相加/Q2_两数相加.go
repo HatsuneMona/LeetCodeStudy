@@ -21,7 +21,7 @@
 
 package main
 
-import . "20.leecode/leetcode"
+import . "20.leecode/leetcodeType"
 
 func main() {
 

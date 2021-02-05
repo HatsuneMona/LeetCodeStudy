@@ -5,7 +5,7 @@
 package main
 
 import (
-	. "20.leecode/leetcode"
+	. "20.leecode/leetcodeType"
 	"20.leecode/tools"
 	"reflect"
 	"testing"
@@ -24,8 +24,8 @@ func Test_addTwoNumbers(t *testing.T) {
 		{
 			name: "第1285个测试用例",
 			args: args{
-				l1: tools.CreateList([]int{0, 8, 6, 5, 6, 8, 3, 5, 7}),
-				l2: tools.CreateList([]int{6, 7, 8, 0, 8, 5, 8, 9, 7}),
+				l1: tools.ArrToList([]int{0, 8, 6, 5, 6, 8, 3, 5, 7}),
+				l2: tools.ArrToList([]int{6, 7, 8, 0, 8, 5, 8, 9, 7}),
 			},
 			want: []int{6, 5, 5, 6, 4, 4, 2, 5, 5, 1},
 		},
