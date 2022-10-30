@@ -39,6 +39,10 @@
 
 package leetcode
 
+import (
+	. "../../../common"
+)
+
 // leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for a binary tree node.
@@ -49,27 +53,27 @@ package leetcode
  * }
  */
 func levelOrder(root *TreeNode) [][]int {
-    if root == nil {
-        return [][]int{}
-    }
+	if root == nil {
+		return [][]int{}
+	}
 
-    levelResult := [][]int{{root.Val}}
+	levelResult := [][]int{{root.Val}}
 
-    if root.Left != nil {
-        levelResult = append(levelResult, levelOrder(root.Left)...)
-    }
+	if root.Left != nil {
+		levelResult = append(levelResult, levelOrder(root.Left)...)
+	}
 
-    if root.Right != nil {
-        for level, result := range levelOrder(root.Right) {
-            if level+1 < len(levelResult) {
-                levelResult[level+1] = append(levelResult[level+1], result...)
-            } else {
-                levelResult = append(levelResult, result)
-            }
-        }
-    }
+	if root.Right != nil {
+		for level, result := range levelOrder(root.Right) {
+			if level+1 < len(levelResult) {
+				levelResult[level+1] = append(levelResult[level+1], result...)
+			} else {
+				levelResult = append(levelResult, result)
+			}
+		}
+	}
 
-    return levelResult
+	return levelResult
 
 }
 

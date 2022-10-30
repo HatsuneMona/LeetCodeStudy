@@ -61,6 +61,10 @@
 
 package leetcode
 
+import (
+	. "../../../common"
+)
+
 // 方案一：哈希  空间占用 O(n)
 // /**
 // * Definition for singly-linked list.
@@ -92,7 +96,7 @@ package leetcode
  * }
  */
 func detectCycle(head *ListNode) *ListNode {
-    return head
+	return head
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

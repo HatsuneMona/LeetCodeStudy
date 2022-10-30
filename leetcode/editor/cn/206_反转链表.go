@@ -47,7 +47,10 @@
 
 package leetcode
 
-import "fmt"
+import (
+	. "../../../common"
+	"fmt"
+)
 
 func Q206Main() {
 	root := &ListNode{

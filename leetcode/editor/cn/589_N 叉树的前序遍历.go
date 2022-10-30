@@ -44,6 +44,10 @@ null,13,null,null,14]
 
 package leetcode
 
+import (
+	. "../../../common"
+)
+
 // leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for a Node.
