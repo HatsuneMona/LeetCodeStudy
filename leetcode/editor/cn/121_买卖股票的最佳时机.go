@@ -40,30 +40,30 @@
 package leetcode
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func Q121Main() {
-	prices := []int{7, 6, 4, 3, 1}
-	fmt.Printf("输出结果：%v\n", maxProfit(prices))
+    prices := []int{7, 6, 4, 3, 1}
+    fmt.Printf("输出结果：%v\n", maxProfit(prices))
 }
 
 // leetcode submit region begin(Prohibit modification and deletion)
 
 func maxProfit(prices []int) int {
-	minPrice, maxProfit := 10001, 0
-
-	for _, price := range prices {
-		if price < minPrice {
-			minPrice = price
-		}
-
-		if price-minPrice > maxProfit {
-			maxProfit = price - minPrice
-		}
-	}
-
-	return maxProfit
+    minPrice, maxProfit := 10001, 0
+    
+    for _, price := range prices {
+        if price < minPrice {
+            minPrice = price
+        }
+        
+        if price-minPrice > maxProfit {
+            maxProfit = price - minPrice
+        }
+    }
+    
+    return maxProfit
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

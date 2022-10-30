@@ -39,13 +39,13 @@
 package main
 
 import (
-	. "./leetcode/editor/cn"
-	"fmt"
+    . "./leetcode/editor/cn"
+    "fmt"
 )
 
 // import _ "./leetcode/editor/cn"
 
 func main() {
-	Q235Main()
-	fmt.Printf("\n")
+    Q235Main()
+    fmt.Printf("\n")
 }

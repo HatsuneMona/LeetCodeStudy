@@ -60,25 +60,25 @@ package leetcode
 
 // leetcode submit region begin(Prohibit modification and deletion)
 func pivotIndex(nums []int) int {
-	if len(nums) == 1 {
-		return 0
-	}
-
-	leftSum, rightSum := 0, 0
-	for i := 1; i < len(nums); i++ {
-		rightSum += nums[i]
-	}
-
-	for i := 0; i < len(nums); i++ {
-		if leftSum == rightSum {
-			return i
-		} else if i < len(nums)-1 {
-			leftSum += nums[i]
-			rightSum -= nums[i+1]
-		}
-	}
-
-	return -1
+    if len(nums) == 1 {
+        return 0
+    }
+    
+    leftSum, rightSum := 0, 0
+    for i := 1; i < len(nums); i++ {
+        rightSum += nums[i]
+    }
+    
+    for i := 0; i < len(nums); i++ {
+        if leftSum == rightSum {
+            return i
+        } else if i < len(nums)-1 {
+            leftSum += nums[i]
+            rightSum -= nums[i+1]
+        }
+    }
+    
+    return -1
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

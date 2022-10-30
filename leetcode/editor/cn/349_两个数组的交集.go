@@ -35,20 +35,20 @@ package leetcode
 
 // leetcode submit region begin(Prohibit modification and deletion)
 func intersection(nums1 []int, nums2 []int) []int {
-	see := make(map[int]bool)
-
-	for _, num := range nums1 {
-		see[num] = false
-	}
-
-	result := make([]int, 0)
-	for _, num := range nums2 {
-		if _, ok := see[num]; ok {
-			delete(see, num)
-			result = append(result, num)
-		}
-	}
-	return result
+    see := make(map[int]bool)
+    
+    for _, num := range nums1 {
+        see[num] = false
+    }
+    
+    result := make([]int, 0)
+    for _, num := range nums2 {
+        if _, ok := see[num]; ok {
+            delete(see, num)
+            result = append(result, num)
+        }
+    }
+    return result
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

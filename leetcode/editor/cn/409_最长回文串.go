@@ -38,47 +38,47 @@
 package leetcode
 
 import (
-	"fmt"
+    "fmt"
 )
 
 func Q409Main() {
-	num := int(^uint(0) >> 2 << 1)
-	fmt.Printf("num = %v     %08b\n", num, num)
-
-	str := "abccccdd"
-	fmt.Printf("输出结果：%v\n", longestPalindrome(str))
+    num := int(^uint(0) >> 2 << 1)
+    fmt.Printf("num = %v     %08b\n", num, num)
+    
+    str := "abccccdd"
+    fmt.Printf("输出结果：%v\n", longestPalindrome(str))
 }
 
 // leetcode submit region begin(Prohibit modification and deletion)
 func longestPalindrome(s string) int {
-
-	if len(s) < 2 {
-		return len(s)
-	}
-
-	// 哈希表解法
-	charStat := make([]int, 64)
-
-	for _, char := range []byte(s) {
-		charStat[char-65]++
-	}
-
-	flag := false
-	length := 0
-	for _, num := range charStat {
-		if num != 0 {
-			length += int(^uint(0)>>2-1) & num
-			// fmt.Println("num = ", num, "     int(^uint(0)>>2<<1) & num = ", int(^uint(0)>>2<<1)&num)
-			flag = flag || num%2 == 1
-		}
-	}
-
-	if flag {
-		length++
-	}
-
-	return length
-
+    
+    if len(s) < 2 {
+        return len(s)
+    }
+    
+    // 哈希表解法
+    charStat := make([]int, 64)
+    
+    for _, char := range []byte(s) {
+        charStat[char-65]++
+    }
+    
+    flag := false
+    length := 0
+    for _, num := range charStat {
+        if num != 0 {
+            length += int(^uint(0)>>2-1) & num
+            // fmt.Println("num = ", num, "     int(^uint(0)>>2<<1) & num = ", int(^uint(0)>>2<<1)&num)
+            flag = flag || num%2 == 1
+        }
+    }
+    
+    if flag {
+        length++
+    }
+    
+    return length
+    
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

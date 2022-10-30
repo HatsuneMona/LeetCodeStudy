@@ -1,19 +1,19 @@
 package common
 
 type ListNode struct {
-	Val  int
-	Next *ListNode
+    Val  int
+    Next *ListNode
 }
 
 // Node Definition for a Node.
 type Node struct {
-	Val      int
-	Children []*Node
+    Val      int
+    Children []*Node
 }
 
 // TreeNode Definition for a binary tree node.
 type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
+    Val   int
+    Left  *TreeNode
+    Right *TreeNode
 }

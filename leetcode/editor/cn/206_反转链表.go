@@ -48,32 +48,32 @@
 package leetcode
 
 import (
-	. "../../../common"
-	"fmt"
+    . "../../../common"
+    "fmt"
 )
 
 func Q206Main() {
-	root := &ListNode{
-		Val:  0,
-		Next: nil,
-	}
-	testCase := root
-
-	for i := 1; i <= 2; i++ {
-		testCase.Next = &ListNode{
-			Val:  i,
-			Next: nil,
-		}
-		testCase = testCase.Next
-	}
-
-	result := reverseList(root.Next)
-
-	for result != nil {
-		fmt.Printf(" %v ", result.Val)
-		result = result.Next
-	}
-	fmt.Println()
+    root := &ListNode{
+        Val:  0,
+        Next: nil,
+    }
+    testCase := root
+    
+    for i := 1; i <= 2; i++ {
+        testCase.Next = &ListNode{
+            Val:  i,
+            Next: nil,
+        }
+        testCase = testCase.Next
+    }
+    
+    result := reverseList(root.Next)
+    
+    for result != nil {
+        fmt.Printf(" %v ", result.Val)
+        result = result.Next
+    }
+    fmt.Println()
 }
 
 // leetcode submit region begin(Prohibit modification and deletion)
@@ -85,29 +85,29 @@ func Q206Main() {
  * }
  */
 func reverseList(head *ListNode) *ListNode {
-	// 链表有[0, 1]个元素
-	if head == nil || head.Next == nil {
-		return head
-	}
-
-	a, b := head, head.Next
-	var c *ListNode
-
-	// 防止 a <-> b 的问题
-	a.Next = nil
-
-	for b != nil {
-		// c: 防断链
-		c = b.Next
-
-		// a -> b -> c 改为 a <- b   c -> ...
-		b.Next = a
-
-		// 操作窗口 后移一位
-		a, b = b, c
-	}
-
-	return a
+    // 链表有[0, 1]个元素
+    if head == nil || head.Next == nil {
+        return head
+    }
+    
+    a, b := head, head.Next
+    var c *ListNode
+    
+    // 防止 a <-> b 的问题
+    a.Next = nil
+    
+    for b != nil {
+        // c: 防断链
+        c = b.Next
+        
+        // a -> b -> c 改为 a <- b   c -> ...
+        b.Next = a
+        
+        // 操作窗口 后移一位
+        a, b = b, c
+    }
+    
+    return a
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

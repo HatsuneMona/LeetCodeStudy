@@ -38,11 +38,11 @@ import (
 
 func Q704Main() {
     nums := []int{-1, 0, 3, 5, 9, 12}
-
+    
     for i, target := range nums {
         fmt.Printf("预期为：%v   测试结果为：%v \n", i, search(nums, target))
     }
-
+    
 }
 
 // leetcode submit region begin(Prohibit modification and deletion)
@@ -50,20 +50,20 @@ func search(nums []int, target int) int {
     if len(nums) == 0 || (len(nums) == 1 && nums[0] != target) {
         return -1
     }
-
+    
     if len(nums) == 1 && nums[0] == target {
         return 0
     }
-
+    
     // fir, mid, las := 0, len(nums)/2, len(nums)-1
     mid := len(nums) / 2
-
+    
     if target < nums[mid] {
         res := search(nums[:mid], target)
         // fmt.Printf("搜索值 %v ，搜索结果%v，搜索范围 %v \n", target, res, nums[:mid])
         return res
     } else if target > nums[mid] {
-
+        
         res := search(nums[mid:], target)
         // fmt.Printf("搜索值 %v ，搜索结果%v，搜索范围 %v \n", target, res, nums[mid:])
         if res == -1 {

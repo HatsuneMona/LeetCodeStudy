@@ -49,13 +49,13 @@ var q278TestCase []bool
 func Q278Main() {
     n, bad := 2126753390, 1702766719
     q278TestCase = make([]bool, n+1)
-
+    
     for i := bad; i < n+1; i++ {
         q278TestCase[i] = true
     }
-
+    
     fmt.Printf("结果：%v\n", firstBadVersion(n))
-
+    
 }
 
 func isBadVersion(version int) bool {
@@ -78,9 +78,9 @@ func firstBadVersion(n int) int {
     if isBadVersion(1) {
         return 1
     }
-
+    
     min, mid, max := 1, n/2, n
-
+    
     // times := 0
     for {
         // fmt.Printf("times: %v ,interregional[%v,%v] ,new mid: %v\n", times, min, max, mid)
@@ -99,9 +99,9 @@ func firstBadVersion(n int) int {
             min = mid
             mid = (max + min) / 2
         }
-
+        
     }
-
+    
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

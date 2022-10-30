@@ -40,16 +40,16 @@ package leetcode
 
 // leetcode submit region begin(Prohibit modification and deletion)
 func runningSum(nums []int) []int {
-	// result := make([]int, len(nums))
-
-	for i, num := range nums {
-		if i == 0 {
-			continue
-		} else {
-			nums[i] = nums[i-1] + num
-		}
-	}
-	return nums
+    // result := make([]int, len(nums))
+    
+    for i, num := range nums {
+        if i == 0 {
+            continue
+        } else {
+            nums[i] = nums[i-1] + num
+        }
+    }
+    return nums
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

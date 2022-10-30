@@ -42,7 +42,7 @@
 package leetcode
 
 import (
-	. "../../../common"
+    . "../../../common"
 )
 
 // leetcode submit region begin(Prohibit modification and deletion)
@@ -56,28 +56,28 @@ import (
  */
 
 func isValidBST(root *TreeNode) bool {
-	inorderList := inorderTraversal(root)
-
-	for i := 1; i < len(inorderList); i++ {
-		if inorderList[i-1] >= inorderList[i] {
-			return false
-		}
-	}
-
-	return true
+    inorderList := inorderTraversal(root)
+    
+    for i := 1; i < len(inorderList); i++ {
+        if inorderList[i-1] >= inorderList[i] {
+            return false
+        }
+    }
+    
+    return true
 }
 
 func inorderTraversal(root *TreeNode) []int {
-
-	res := make([]int, 0)
-	if root.Left != nil {
-		res = append(res, inorderTraversal(root.Left)...)
-	}
-	res = append(res, root.Val)
-	if root.Right != nil {
-		res = append(res, inorderTraversal(root.Right)...)
-	}
-	return res
+    
+    res := make([]int, 0)
+    if root.Left != nil {
+        res = append(res, inorderTraversal(root.Left)...)
+    }
+    res = append(res, root.Val)
+    if root.Right != nil {
+        res = append(res, inorderTraversal(root.Right)...)
+    }
+    return res
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

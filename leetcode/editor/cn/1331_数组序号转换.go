@@ -46,8 +46,8 @@
 package leetcode
 
 import (
-	"fmt"
-	"sort"
+    "fmt"
+    "sort"
 )
 
 // > 2022/07/28 14:20:27
@@ -55,35 +55,35 @@ import (
 //	 执行耗时:64 ms,击败了79.17% 的Go用户
 //	 内存消耗:11.8 MB,击败了60.42% 的Go用户
 func Q1331Main() {
-	test := []int{40, 10, 20, 30}
-	fmt.Printf("测试结果：%v", arrayRankTransform(test))
+    test := []int{40, 10, 20, 30}
+    fmt.Printf("测试结果：%v", arrayRankTransform(test))
 }
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 func arrayRankTransform(arr []int) []int {
-	if len(arr) < 1 {
-		return arr
-	}
-
-	sortMap := map[int]int{}
-	sortArr := make([]int, 0, len(arr))
-
-	for _, i := range arr {
-		if _, ok := sortMap[i]; !ok {
-			sortMap[i] = 0
-			sortArr = append(sortArr, i)
-		}
-	}
-
-	sort.Ints(sortArr)
-	for index, i := range sortArr {
-		sortMap[i] = index + 1 // 题目要求从 1 开始，而非从 0 开始
-	}
-
-	for i := 0; i < len(arr); i++ {
-		arr[i] = sortMap[arr[i]]
-	}
-	return arr
+    if len(arr) < 1 {
+        return arr
+    }
+    
+    sortMap := map[int]int{}
+    sortArr := make([]int, 0, len(arr))
+    
+    for _, i := range arr {
+        if _, ok := sortMap[i]; !ok {
+            sortMap[i] = 0
+            sortArr = append(sortArr, i)
+        }
+    }
+    
+    sort.Ints(sortArr)
+    for index, i := range sortArr {
+        sortMap[i] = index + 1 // 题目要求从 1 开始，而非从 0 开始
+    }
+    
+    for i := 0; i < len(arr); i++ {
+        arr[i] = sortMap[arr[i]]
+    }
+    return arr
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)

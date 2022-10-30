@@ -48,33 +48,33 @@ package leetcode
 import "fmt"
 
 func Q392Main() {
-	s, t := "aaaaaa", "bbaaaa"
-	fmt.Printf("测试结果：%v\n", isSubsequence(s, t))
+    s, t := "aaaaaa", "bbaaaa"
+    fmt.Printf("测试结果：%v\n", isSubsequence(s, t))
 }
 
 // leetcode submit region begin(Prohibit modification and deletion)
 func isSubsequence(s string, t string) bool {
-	slen, tlen := len(s), len(t)
-
-	if slen == 0 {
-		return true
-	}
-
-	if slen > tlen {
-		return false
-	}
-
-	sptr := 0
-	for _, b := range []byte(t) {
-		if []byte(s)[sptr] == b {
-			sptr++
-			if sptr == slen {
-				return true
-			}
-		}
-		tlen--
-	}
-	return false
+    slen, tlen := len(s), len(t)
+    
+    if slen == 0 {
+        return true
+    }
+    
+    if slen > tlen {
+        return false
+    }
+    
+    sptr := 0
+    for _, b := range []byte(t) {
+        if []byte(s)[sptr] == b {
+            sptr++
+            if sptr == slen {
+                return true
+            }
+        }
+        tlen--
+    }
+    return false
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

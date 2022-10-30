@@ -41,7 +41,7 @@
 package leetcode
 
 import (
-	. "../../../common"
+    . "../../../common"
 )
 
 // leetcode submit region begin(Prohibit modification and deletion)
@@ -53,35 +53,35 @@ import (
  * }
  */
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
-	if list1 == nil || list2 == nil {
-		if list1 == nil {
-			return list2
-		}
-		return list1
-	}
-
-	l1Ptr, l2Ptr := list1, list2
-	root := new(ListNode)
-	result := root
-
-	for l1Ptr != nil && l2Ptr != nil {
-		if l1Ptr.Val < l2Ptr.Val {
-			result.Next = l1Ptr
-			l1Ptr = l1Ptr.Next
-		} else {
-			result.Next = l2Ptr
-			l2Ptr = l2Ptr.Next
-		}
-		result = result.Next
-	}
-
-	if l1Ptr != nil {
-		result.Next = l1Ptr
-	} else {
-		result.Next = l2Ptr
-	}
-
-	return root.Next
+    if list1 == nil || list2 == nil {
+        if list1 == nil {
+            return list2
+        }
+        return list1
+    }
+    
+    l1Ptr, l2Ptr := list1, list2
+    root := new(ListNode)
+    result := root
+    
+    for l1Ptr != nil && l2Ptr != nil {
+        if l1Ptr.Val < l2Ptr.Val {
+            result.Next = l1Ptr
+            l1Ptr = l1Ptr.Next
+        } else {
+            result.Next = l2Ptr
+            l2Ptr = l2Ptr.Next
+        }
+        result = result.Next
+    }
+    
+    if l1Ptr != nil {
+        result.Next = l1Ptr
+    } else {
+        result.Next = l2Ptr
+    }
+    
+    return root.Next
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

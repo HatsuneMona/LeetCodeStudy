@@ -40,34 +40,34 @@
 package leetcode
 
 import (
-	"fmt"
-	"sort"
+    "fmt"
+    "sort"
 )
 
 func Q1636Main() {
-	testCase := []int{1, 1, 2, 2, 2, 3}
-	fmt.Printf("测试用例：%v\n结果：%v", testCase, frequencySort(testCase))
+    testCase := []int{1, 1, 2, 2, 2, 3}
+    fmt.Printf("测试用例：%v\n结果：%v", testCase, frequencySort(testCase))
 }
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 func frequencySort(nums []int) []int {
-	cnt := make([]int, 201)
-	// 统计出现的次数
-	for _, v := range nums {
-		cnt[v+100]++
-	}
-
-	sort.Slice(nums, func(i, j int) bool {
-		a, b := nums[i]+100, nums[j]+100
-
-		if cnt[a] < cnt[b] {
-			return true
-		} else if cnt[a] == cnt[b] && a > b {
-			return true
-		}
-		return false
-	})
-	return nums
+    cnt := make([]int, 201)
+    // 统计出现的次数
+    for _, v := range nums {
+        cnt[v+100]++
+    }
+    
+    sort.Slice(nums, func(i, j int) bool {
+        a, b := nums[i]+100, nums[j]+100
+        
+        if cnt[a] < cnt[b] {
+            return true
+        } else if cnt[a] == cnt[b] && a > b {
+            return true
+        }
+        return false
+    })
+    return nums
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+// leetcode submit region end(Prohibit modification and deletion)

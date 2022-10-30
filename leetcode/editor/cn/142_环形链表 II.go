@@ -62,7 +62,7 @@
 package leetcode
 
 import (
-	. "../../../common"
+    . "../../../common"
 )
 
 // 方案一：哈希  空间占用 O(n)
@@ -96,7 +96,7 @@ import (
  * }
  */
 func detectCycle(head *ListNode) *ListNode {
-	return head
+    return head
 }
 
 // leetcode submit region end(Prohibit modification and deletion)
