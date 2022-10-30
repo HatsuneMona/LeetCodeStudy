@@ -1,0 +1,48 @@
+func strStr(haystack string, needle string) int {
+	// 暴力解法
+
+	// 题目已知 “haystack 和 needle 仅由小写英文字符组成”
+	// 否则需要用 utf8.RuneCountInString()
+	if len(needle) == 0 {
+		return 0
+	} else if len(haystack) < len(needle) {
+		return -1
+	}
+
+	// i 主串
+	// j 子串
+	i, j := 0, 0
+	for ; i < len(haystack); i++ {
+
+		// 当前 检测的字符相同
+		if haystack[i] == needle[j] {
+			j++
+			// 当 j == len(needle) - 1 时，找到匹配值，输出。
+			if j == len(needle) {
+				return i - j + 1
+			}
+		} else {
+			// 否则置零子串的指针
+			// "0123 456789"
+			// "abcd dddefg"
+			// "abce"
+			// 前：  i = 3  j = 3
+			// 目标：i = 1  j = 0
+			//      i = i - j + 1
+			j = 0
+			i = i - j //
+		}
+
+	}
+
+	// 没找到
+	return -1
+
+}
+
+//total_testcases:75
+//total_correct:62
+//input_formatted:"mississippi"
+"issip"
+//expected_output:4
+//code_output:-1

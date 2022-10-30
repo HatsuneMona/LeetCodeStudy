@@ -1,0 +1,12 @@
+使用双指针，快指针每次移动两个节点，满指针每次移动一个节点，当快指针走完整个链表时，慢指针正好处于链表的中间位置。
+
+    func middleNode(head *ListNode) *ListNode {
+        slow, fast := head, head
+
+        for fast != nil && fast.Next != nil {
+            slow, fast = slow.Next, fast.Next.Next
+        }
+
+        return slow
+    }
+
