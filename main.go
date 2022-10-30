@@ -46,6 +46,6 @@ import (
 // import _ "./leetcode/editor/cn"
 
 func main() {
-	Q733Main()
+	Q784Main()
 	fmt.Printf("\n")
 }
