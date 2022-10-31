@@ -1,14 +1,14 @@
 package main
 
 import (
-    . "./leetcode/editor/cn"
-    "fmt"
+	. "./leetcode/editor/cn"
+	"fmt"
 )
 
 // import _ "./leetcode/editor/cn"
 
 func main() {
-    Q784Main()
-    fmt.Printf("\n")
-    // TEST space to tab
+	Q481Main()
+	fmt.Printf("\n")
+	// TEST space to tab
 }
