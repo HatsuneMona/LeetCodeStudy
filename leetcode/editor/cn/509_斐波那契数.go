@@ -54,25 +54,25 @@ import (
 
 func Q509Main() {
 	fmt.Println("输出结果：", fib(3))
-	fmt.Printf("checkMap %v\n", checkMap)
+	fmt.Printf("checkMap_509 %v\n", checkMap_509)
 }
 
 // leetcode submit region begin(Prohibit modification and deletion)
 
-var checkMap []int
+var checkMap_509 []int
 
 func fib(n int) int {
 	if n < 2 {
 		return n
 	}
 
-	if checkMap == nil || len(checkMap) < n+1 {
-		checkMap = make([]int, n+1)
-		checkMap[0], checkMap[1] = 0, 1
+	if checkMap_509 == nil || len(checkMap_509) < n+1 {
+		checkMap_509 = make([]int, n+1)
+		checkMap_509[0], checkMap_509[1] = 0, 1
 	}
 
-	checkMap[n] = fib(n-1) + checkMap[n-2]
-	return checkMap[n]
+	checkMap_509[n] = fib(n-1) + checkMap_509[n-2]
+	return checkMap_509[n]
 }
 
 // leetcode submit region end(Prohibit modification and deletion)
