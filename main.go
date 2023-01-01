@@ -8,7 +8,7 @@ import (
 // import _ "./leetcode/editor/cn"
 
 func main() {
-	Q300Main()
+	Q674Main()
 	fmt.Printf("\n")
 	// TEST space to tab
 }
