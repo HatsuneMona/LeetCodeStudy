@@ -5,10 +5,10 @@ import (
 	"fmt"
 )
 
-// import _ "./leetcode/editor/cn"
+// import . "./leetcode/editor/cn"
 
 func main() {
-	Q674Main()
+	Q2299Main()
 	fmt.Printf("\n")
 	// TEST space to tab
 }
