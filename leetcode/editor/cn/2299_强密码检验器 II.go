@@ -49,10 +49,6 @@
 
 package leetcode
 
-import (
-	"unicode"
-)
-
 func Q2299Main() {
 	strongPasswordCheckerII("ziyS5FrPQhoQ5oEWRpHW2MjI7sGfcMJdcsjQnIyRbdCilvFaQN07jQtAkOklbjFrU5KcHzw4EvJ41Yz2Ykyd")
 }
@@ -80,7 +76,6 @@ func strongPasswordCheckerII(password string) bool {
 			checkList[0] = true
 			continue
 		}
-		unicode.IsLower()
 
 		// 1 一个大写英文
 		if char >= 'A' && char <= 'Z' {
