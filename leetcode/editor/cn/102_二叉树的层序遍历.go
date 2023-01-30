@@ -40,7 +40,7 @@
 package leetcode
 
 import (
-    . "../../../common"
+	. "leetcode/common"
 )
 
 // leetcode submit region begin(Prohibit modification and deletion)
@@ -53,28 +53,28 @@ import (
  * }
  */
 func levelOrder(root *TreeNode) [][]int {
-    if root == nil {
-        return [][]int{}
-    }
-    
-    levelResult := [][]int{{root.Val}}
-    
-    if root.Left != nil {
-        levelResult = append(levelResult, levelOrder(root.Left)...)
-    }
-    
-    if root.Right != nil {
-        for level, result := range levelOrder(root.Right) {
-            if level+1 < len(levelResult) {
-                levelResult[level+1] = append(levelResult[level+1], result...)
-            } else {
-                levelResult = append(levelResult, result)
-            }
-        }
-    }
-    
-    return levelResult
-    
+	if root == nil {
+		return [][]int{}
+	}
+
+	levelResult := [][]int{{root.Val}}
+
+	if root.Left != nil {
+		levelResult = append(levelResult, levelOrder(root.Left)...)
+	}
+
+	if root.Right != nil {
+		for level, result := range levelOrder(root.Right) {
+			if level+1 < len(levelResult) {
+				levelResult[level+1] = append(levelResult[level+1], result...)
+			} else {
+				levelResult = append(levelResult, result)
+			}
+		}
+	}
+
+	return levelResult
+
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

@@ -39,7 +39,7 @@ NULL.
 package leetcode
 
 import (
-    . "../../../common"
+	. "leetcode/common"
 )
 
 // leetcode submit region begin(Prohibit modification and deletion)
@@ -51,22 +51,22 @@ import (
  * }
  */
 func middleNode(head *ListNode) *ListNode {
-    // head == nil 不加，因为 “给定链表的结点数介于 1 和 100 之间”
-    if head.Next == nil {
-        return head
-    }
-    
-    mid, end := head, head.Next
-    
-    for {
-        mid, end = mid.Next, end.Next
-        if end == nil || end.Next == nil {
-            return mid
-        }
-        end = end.Next
-    }
-    
-    panic("err")
+	// head == nil 不加，因为 “给定链表的结点数介于 1 和 100 之间”
+	if head.Next == nil {
+		return head
+	}
+
+	mid, end := head, head.Next
+
+	for {
+		mid, end = mid.Next, end.Next
+		if end == nil || end.Next == nil {
+			return mid
+		}
+		end = end.Next
+	}
+
+	panic("err")
 }
 
 // leetcode submit region end(Prohibit modification and deletion)

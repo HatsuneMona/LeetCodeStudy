@@ -45,7 +45,7 @@ null,13,null,null,14]
 package leetcode
 
 import (
-    . "../../../common"
+	. "leetcode/common"
 )
 
 // leetcode submit region begin(Prohibit modification and deletion)
@@ -58,16 +58,16 @@ import (
  */
 
 func preorder(root *Node) []int {
-    if root == nil {
-        return []int{}
-    }
-    
-    res := []int{root.Val}
-    for _, child := range root.Children {
-        res = append(res, preorder(child)...)
-    }
-    
-    return res
+	if root == nil {
+		return []int{}
+	}
+
+	res := []int{root.Val}
+	for _, child := range root.Children {
+		res = append(res, preorder(child)...)
+	}
+
+	return res
 }
 
 // leetcode submit region end(Prohibit modification and deletion)
